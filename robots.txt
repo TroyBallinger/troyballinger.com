@@ -1,0 +1,7 @@
+User-agent:*
+
+Disallow: /contact
+
+Disallow: /media/
+
+Sitemap: http://troyballinger.com/sitemap.xml

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<?php
+	include 'header.html';
+?>
+	<title>Projects | troyballinger.com</title>
+</head>
+
+<body>
+<div class="content_wrapper">
+	<div class="article_container">
+	<div class="article" id="projects_article">
+		<div class="writeup" id="c">
+			<h1>C</h1>
+			<ul>
+			<li><h3>Created a shell simulator in C using forks, pipes, and execs.</h3></li>
+				<ul>
+				<li>Simulator allowed input and output redirection, background execution, and multiple commands per input line.</li>
+				</ul>
+			<li><h3>Wrote a macro to mimic a templated deque (pseudo-C, C++ with no std lib, classes, templates, member functions).</h3></li>
+				<ul>
+				<li>Able to hold any type, except (void*) for type safety, complete with iterators and a circular, dynamic array</li>
+				<li>The intention of this project was to demonstrate the value of templates, as well as the versatility of macros.</li>
+				</ul>
+			<li><h3>Wrote programs to read in binary files.</h3></li>
+			    <ul>
+				<li>Learned how to recognize file type from binary signatures.</li>
+				<li>Wrote a function able to read in C functions from binary and execute them with user input.</li>
+				</ul>
+			</ul>
+		</div>
+		<div class="writeup" id="c++">
+			<h1>C++</h1>
+			<ul>
+			<li><h3>Replicated std::map</h3></li>
+				<ul>
+				<li>Utilized skip lists, templates, inheritance, and iterators.</li>
+				<li>Replicated all behavior of std::map, including operator overloads.</li>
+				</ul>
+			<li><h3>Replicated std::shared_ptr</h3></li>
+			    <ul>
+				<li>Thread-safe, exception-safe, and reference-counting with all the functionality of the std library version.</li>
+				<li>Memory management is automatically handled with Deleter objects.</li></ul>
+			<li><h3>Implemented Dijkstra's Algorithm to map the shortest path between City objects.</h3></li>
+				<ul>
+				<li>Compared time complexity of Adjacency List and Adjacency Matrix implementations.</li>
+				<li>Wrote code to randomly generate tests on dense and sparse graphs up to V=8000.</li>
+				<li>Presented findings to CS375 class: List is far more efficient on sparse graphs: O((V + E) log(V)) vs O(V^2).</li>
+				</ul>
+				<div id="graph_holder">
+					<img src="media/list_v_matrix_graph.jpg" id="graph">
+				</div>
+			</ul>
+		</div>
+		<div class="writeup" id="js">
+			<h1>JavaScript</h1>
+			<ul>
+			<li><h3>Developed a RESTful collaborative platform for analyzing and reverse-engineering malware.</h3></li>
+				<ul>
+				<li>See resume for more info.</li>
+				</ul>
+			<li><h3>Designed a license plate reader using a Raspberry Pi server running Node.js.</h3></li>
+				<ul>
+				<li>Utilized Android App to put accepted cars into a Firebase DB.</li>
+				<li>Set up a motion detector to trigger a camera to take picture when car was in front of garage door:</li>
+				<li>The resulting image was analyzed by OpenALPR cloud API and then checked against Firebase DB; door opens on a match.</li>
+				<li><a href="/media/report">You can view the report by clicking here</a></li>
+				</ul>
+			<li><h3>Implemented a thermoelectric material product recommender.</h3></li>
+				<ul>
+				<li>Using user-input temperatures, thermoelectric products were recommended.</li>
+				</ul>
+			<li><h3>Wrote a script for Google Sheets that synced data on two spreadsheets both ways in real time.</h3></li>
+			</ul>
+		</div>
+		<div class="writeup" id="java">
+			<h1>Java</h1>
+			<ul>
+			<li><h3>Reverse-engineered NSA's Ghidra server to meet company specifications.</h3></li> 
+				<ul>
+				<li>Replaced username/password login with Auth0.</li>
+				<li>Modified the file storage system to be consistent across & support multiple containerized instances of GhidraServer.</li>
+				</ul>
+			</ul>
+		</div>
+		<div class="writeup" id="php">
+			<h1>PHP</h1>
+			<ul>
+			<li><h3>Created an input validation tool using PHP.</h3></li> 
+				<ul>
+				<li>Included SQL injection protection and format checking for: dates, emails, SSNs, names, and zip codes.</li>
+				<li>Created an HTML survey generator shipped with JavaScript input validation.</li>
+				</ul>
+			</ul>
+		</div>
+	</div>
+	<span style="text-align:center;font-size:12px;"><p>Gradually updating this page as well</p></span>
+	</div>
+</body>
+</div>
+</html>
