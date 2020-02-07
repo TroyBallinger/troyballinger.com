@@ -1,14 +1,16 @@
 Options +FollowSymLinks +MultiViews -indexes
 RewriteEngine On
 RewriteBase /
-# remove .php from url
+# remove .html from url
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
 # remove .pdf
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.pdf [NC,L]
+# redirect pdfs
+RewriteRule ^media/pdfs/(.*)$ /$1 [L,NC,R]
 # remove /index
 RewriteRule (.*)/index$ $1/ [R=302]
 # remove slash if not directory

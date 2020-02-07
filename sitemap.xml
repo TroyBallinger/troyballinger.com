@@ -6,7 +6,7 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://troyballinger.com/index</loc>
+  <loc>http://troyballinger.com/</loc>
   <changefreq>weekly</changefreq>
   <priority>1.00</priority>
 </url>
