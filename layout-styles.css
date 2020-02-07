@@ -206,6 +206,8 @@ ul > img {
 		0 calc(100% - 5vw)
 	);
 	margin-bottom:-5vw;
+	min-height:450px;
+	padding-top:60px;
 }
 
 #profile_circle_image {
@@ -227,16 +229,16 @@ ul > img {
 
 #profile_left {
 	margin-left:15%;
-	padding:15px 30px 15px 25px;
+	padding:15px 50px 15px 25px;
 	display:inline-block;
 	text-align:right;
-	background-color: rgba(230,230,230,.4);
+	background-color: rgb(229,230,232, .4);
 	border-radius:30px 0px 0px 30px;
 }
 
 #profile_left > h1 {
 	margin:0;
-	background: -webkit-linear-gradient(left, #ff2222, #f58f46);
+	background: -webkit-linear-gradient(left, #fd3116, #ff932e);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -248,9 +250,11 @@ ul > img {
 
 #profile_right {
 	width:35%;
+	height:inherit;
 	display:inline-block;
 	min-height:200px;
 	position:relative;
+	padding-top:25px;
 }
 
 .triangle {
