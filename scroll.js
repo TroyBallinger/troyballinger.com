@@ -5,7 +5,7 @@ function scrollFunction() {
 		document.getElementById("header_link_holder").style.paddingTop = "0";
 		document.getElementById("header_link_holder").style.paddingBottom = "0";
 	} else {
-		document.getElementById("header_link_holder").style.paddingTop = "1vh";
-		document.getElementById("header_link_holder").style.paddingBottom = "1vh";
+		document.getElementById("header_link_holder").style.paddingTop = ".75vw";
+		document.getElementById("header_link_holder").style.paddingBottom = ".75vw";
 	}
 }
