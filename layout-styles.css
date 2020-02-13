@@ -231,8 +231,8 @@ ul > img {
 	/* General use classes */
 	.article {
 		margin:0;
+		padding:0;
 		width:100%;
-		padding-top:0;
 	}
 
 	.column_holder {
@@ -257,6 +257,16 @@ ul > img {
 
 	/* Index */
 
+	#profile_background {
+		min-height:12vh;
+		clip-path: polygon(
+			0 0,
+			100% 0,
+			100% 100%,
+			0 calc(100% - 3vh)
+		);
+	}
+
 	#profile_circle_image {
 		display:none;
 	}
@@ -268,10 +278,10 @@ ul > img {
 	#profile_left {
 		text-align:center;
 		border-radius:1vh;
-		margin-left:10vw;
-		margin-right:10vw;
+		margin-left:20vw;
+		margin-right:20vw;
 		position:relative;
 		right:0;
-		top:10vh;
+		top: 4vh;
 	}
 }
