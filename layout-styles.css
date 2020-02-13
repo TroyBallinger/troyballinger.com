@@ -88,7 +88,6 @@ ul > img {
 }
 
 .content_wrapper {
-	padding-top:4vw;
 	width:100vw;
 	margin:0;
 }
@@ -116,11 +115,11 @@ ul > img {
 /* Header */
 .header_item {
 	height:inherit;
-	line-height:2.5vw;
+	line-height:1.5vw;
 	text-align:center;
 	list-style:none;
 	font-family: 'Montserrat', sans-serif;
-	font-size:2vw;
+	font-size:1.75vw;
 	color:white; 
 }
 
@@ -134,9 +133,9 @@ ul > img {
 
 #header_link_holder {
 	background-color: #24292E;
-	height:3vw;
-	padding-top:.75vw;
-	padding-bottom:.75vw;
+	height:2vw;
+	padding-top:.5vw;
+	padding-bottom:.5vw;
 	transition: .25s ease;
 	width:100%;
 	column-count: 3;
@@ -147,7 +146,6 @@ ul > img {
 	text-align:center;
 	position:fixed;
 	z-index:95;
-	
 }
 
 #logo {
@@ -180,7 +178,7 @@ ul > img {
 	overflow:hidden;
 	position:absolute;
 	left:52%;
-	top: 7vw;
+	top: 4vw;
 }
 
 #profile_headshot {
@@ -199,7 +197,7 @@ ul > img {
 	border-radius:2vw 0 0 2vw;
 	position:absolute;
 	right:46.5%;
-	top:12vw;
+	top:9vw;
 }
 
 #profile_left > h1 {
