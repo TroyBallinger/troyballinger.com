@@ -222,15 +222,15 @@ ul > img {
 		text-align:center;
 		padding-left:0;
 		z-index:10;
-		font-size: 1.75vh;
+		font-size: 2.25vh;
 	}
 
 	h2 {
-		font-size: 1.5vh;
+		font-size: 2vh;
 	}
 
 	h3 {
-		font-size:1vh;
+		font-size:1.75vh;
 	}
 
 	ul {
@@ -238,7 +238,7 @@ ul > img {
 	}
 
 	p, li {
-		font-size:1vh;
+		font-size:1.5vh;
 	}
 	
 	/* General use classes */
@@ -271,12 +271,12 @@ ul > img {
 	/* Index */
 
 	#profile_background {
-		min-height:12vh;
+		min-height:13vh;
 		clip-path: polygon(
 			0 0,
 			100% 0,
 			100% 100%,
-			0 calc(100% - 3vh)
+			0 calc(100% - 2vh)
 		);
 	}
 
