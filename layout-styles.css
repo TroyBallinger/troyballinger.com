@@ -8,7 +8,6 @@ body {
 	margin:0;
 	padding:0;
 	background-color: #e5e6e8;
-	background-image: url("/media/code_background.jpg");
 	background-size:cover;
 	overflow-x:hidden;
 }
@@ -51,54 +50,10 @@ ul > img {
 }
 
 /* General use classes */
-.article {
-	width:100%;
-	display:inline-block;
-	position:relative;
-	padding-bottom:2vw;
-}
-
-.article_container {
-	background-color:#e5e6e8;
-	border-top:1vh solid;
-	border-color:#24292E;
-	min-width:100vw;
-}
-
-.card {
-	width:100%;
-	padding-top: 1vh;
-	padding-bottom: 1vh;
-	margin-bottom:1.5vh;
-	background-color: #e5e6e8;
-	border-radius: 1vh;
-}
-
-.card > h2 {
-	text-align:center;
-	border-bottom: .1vw solid black;
-	margin: 0;
-}
-
-.column_holder {
-	width:85vw;
-	margin:auto;
-	font-family: sans-serif;
-	column-count:2;
-}
 
 .content_wrapper {
 	width:100vw;
 	margin:0;
-}
-
-.graph_holder {
-	text-align:center;
-	padding-right:40px;
-}
-
-.graph {
-	width:100%;
 }
 
 .writeup {
@@ -163,12 +118,12 @@ ul > img {
 	background-size:cover;
 	background-repeat:no-repeat;
 	text-align:center;
-	min-height:22vw;
+	min-height:30vw;
 	clip-path: polygon(
 		0 0,
 		100% 0,
-		100% 100%,
-		0 calc(100% - 10vh)
+		calc(100% - 4vw) 100%,
+		0 calc(100% - 8vw)
 	);
 }
 
@@ -178,7 +133,7 @@ ul > img {
 	overflow:hidden;
 	position:absolute;
 	left:52%;
-	top: 4vw;
+	top: 6vw;
 }
 
 #profile_headshot {
@@ -197,7 +152,7 @@ ul > img {
 	border-radius:2vw 0 0 2vw;
 	position:absolute;
 	right:46.5%;
-	top:9vw;
+	top:11vw;
 }
 
 #profile_left > h1 {
@@ -212,12 +167,7 @@ ul > img {
 	margin:0;
 }
 
-#projects {
-	background-color: #bbb9b9;
-}
-
-@media only screen and (min-width: 100px) and (max-width: 1024px) {
-	/* General settings */
+@media only screen and (max-width: 1024px) {
 	h1 {
 		text-align:center;
 		padding-left:0;
@@ -240,21 +190,20 @@ ul > img {
 	p, li {
 		font-size:1.5vh;
 	}
-	
-	/* General use classes */
-	.article {
-		margin:0;
-		padding:0;
-		width:100%;
+
+	#header_link_holder {
+		height:1.75vh;
+		padding-top:.25vh;
+		padding-bottom:.25vh;
 	}
 
-	.column_holder {
-		width:95vw;
-		column-count: 1;
+	.header_item {
+		line-height:1.5vh;
+		font-size:1.5vh;
 	}
 
-	.graph {
-		width:100%;
+	#logo {
+		display: none;
 	}
 
 	.writeup {
@@ -263,38 +212,22 @@ ul > img {
 		margin:auto;
 	}
 
-	/* Header */
-	#logo {
-		display:none;
-	}
-
-	/* Index */
-
 	#profile_background {
-		min-height:13vh;
-		clip-path: polygon(
-			0 0,
-			100% 0,
-			100% 100%,
-			0 calc(100% - 2vh)
-		);
-	}
-
-	#profile_circle_image {
-		display:none;
+		min-height:24vh;
 	}
 
 	#profile_headshot {
-		display:none;
+		width:15vh;
+		height:15vh;
 	}
 
 	#profile_left {
-		text-align:center;
-		border-radius:1vh;
-		margin-left:20vw;
-		margin-right:20vw;
-		position:relative;
-		right:0;
+		top: 8.5vh;
+		right: 38.5%;
+	}
+
+	#profile_circle_image {
 		top: 4vh;
+		left: 60%;
 	}
 }
