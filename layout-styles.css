@@ -5,6 +5,7 @@ a {
 }
 
 body {
+	-webkit-column-break-inside:avoid;
 	margin:0;
 	padding:0;
 	background-color: #e5e6e8;
