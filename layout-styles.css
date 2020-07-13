@@ -5,9 +5,6 @@ a {
 }
 
 body {
-	-webkit-column-break-inside: avoid;
-        page-break-inside: avoid;
-	break-inside: avoid;
 	margin:0;
 	padding:0;
 	background-color: #e5e6e8;
@@ -17,9 +14,9 @@ body {
 
 img {
 	-webkit-user-select: none;
-    -moz-user-select: -moz-none;
-    -ms-user-select: none;
-    user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 h1 {
@@ -72,13 +69,13 @@ ul > img {
 
 /* Header */
 .header_item {
-	height:inherit;
+	height:100%;
 	line-height:1.5vw;
 	text-align:center;
 	list-style:none;
 	font-family: 'Montserrat', sans-serif;
 	font-size:1.5vw;
-	color:white; 
+	color: white; 
 }
 
 .header_item a {
@@ -97,6 +94,9 @@ ul > img {
 	transition: .25s ease;
 	width:100%;
 	column-count: 3;
+	-webkit-column-break-inside: avoid;
+        page-break-inside: avoid;
+	break-inside: avoid;
 }
 
 #header_list {
