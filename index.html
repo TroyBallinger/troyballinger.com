@@ -59,7 +59,18 @@
 	</div>
 </div>
 <span style="text-align:right; position:fixed; bottom:0; width:100%;">
-	<p style="margin:0;" id="last-updated">Last update: 06/18/2020</p>
+	<p style="margin:0;" id="last-updated">
+	<script>
+		// If this request fails (bad request/noscript) the entire line won't show up, so errors are no biggie
+		fetch("https://api.github.com/repos/TroyBallinger/troyballinger.github.io/commits/master").then( (res) => {
+			return res.json();
+		}).then( (data) => {
+			let dateAndTime = data["commit"]["author"]["date"];
+			let date = dateAndTime.split("T")[0];
+			document.getElementById("last-updated").innerHTML = `Last updated: ${date}`;
+		});
+	</script>
+	</p>
 	<p style="margin:0;"><a href="https://github.com/TroyBallinger/troyballinger.github.io">View website source code</a></p>
 </span>
 </body>
