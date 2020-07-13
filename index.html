@@ -20,6 +20,7 @@
 	<link rel="canonical" href="https://troyballinger.com/">
 </head>
 <body>
+<!--TODO: Add easter eggs in code-->
 <div id ="header_list">
 	<div id="header_link_holder">
 	<img src="/icons/logo-white.png" id="logo">
@@ -52,7 +53,7 @@
 			<p>I'm hoping what you're looking for is on the top nav bar, otherwise I'd have a poorly designed site.</p>
 		<h2>What do I specialize in?</h2>
 			<p>Low-level languages. I find the better a programmer is at writing C, the faster they can pick up new languages. But we can debate that one.</p>
-			<p>Cybersecurity. From modifying <a href="https://ghidra-sre.org/">Ghidra</a>'s source code, to writing papers on quantum computing, to CTF challenges. I've done it all.</p>
+			<p>Cybersecurity. From modifying <a href="https://ghidra-sre.org/"><i>Ghidra</i></a>'s source code, to writing papers on quantum computing, to CTF challenges. I've done it all.</p>
 			<p>Leading teams. Recognizing others' strengths and utilizing their skills to reach goals efficiently.</p>
 		<h2>What's next?</h2>
 			<p>I'm actively interviewing. Shoot me an email: troyballinger97 at gmail</p>
@@ -64,11 +65,22 @@
 		// If this request fails (bad request/noscript) the entire line won't show up, so errors are no biggie
 		fetch("https://api.github.com/repos/TroyBallinger/troyballinger.github.io/commits/master").then( (res) => {
 			return res.json();
-		}).then( (data) => {
+		}).then(data => {
 			let dateAndTime = data["commit"]["author"]["date"];
 			let date = dateAndTime.split("T")[0];
 			document.getElementById("last-updated").innerHTML = `Last updated: ${date}`;
+		}).catch(_err => {
+			// GitHub API error
 		});
+
+		let scrambled = "Xibu(t!vq!gfmmpx!efw@";
+		let unscrambled = Array.from(scrambled).map(char => {
+			return String.fromCharCode(char.charCodeAt() - 1);
+		}).join("");
+
+		function callMe() {
+			return unscrambled;
+		}
 	</script>
 	</p>
 	<p style="margin:0;"><a href="https://github.com/TroyBallinger/troyballinger.github.io">View website source code</a></p>
