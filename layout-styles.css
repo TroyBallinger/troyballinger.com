@@ -5,9 +5,8 @@ a {
 }
 
 body {
-	-webkit-column-break-inside: avoid;
-        page-break-inside: avoid;
-	break-inside: avoid;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
 	margin:0;
 	padding:0;
 	background-color: #e5e6e8;
@@ -17,32 +16,25 @@ body {
 
 img {
 	-webkit-user-select: none;
-    -moz-user-select: -moz-none;
-    -ms-user-select: none;
-    user-select: none;
+	-moz-user-select: -moz-none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 h1 {
-	font-family: 'Montserrat', sans-serif;
 	font-size:1.75vw;
-	color:black;
 }
 
 h2 {
-	font-family: 'Montserrat', sans-serif;
 	font-size:1.5vw;
-	color:black;
 }
 
 h3 {
-	font-family: 'Montserrat', sans-serif;
 	font-size:1vw;
-	color:black;
 }
 
 p, li {
 	font-family:'Verdana', sans-serif;
-	color:black;
 	font-size:1vw;
 }
 
@@ -62,7 +54,6 @@ ul > img {
 .writeup {
 	margin-left:25vw;
 	margin-right:25vw;
-	font-family: sans-serif;
 }
 
 .writeup li {
@@ -72,13 +63,12 @@ ul > img {
 
 /* Header */
 .header_item {
-	height:inherit;
 	line-height:1.5vw;
 	text-align:center;
 	list-style:none;
 	font-family: 'Montserrat', sans-serif;
 	font-size:1.5vw;
-	color:white; 
+	color: white; 
 }
 
 .header_item a {
@@ -97,6 +87,9 @@ ul > img {
 	transition: .25s ease;
 	width:100%;
 	column-count: 3;
+	-webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+	break-inside: avoid;
 }
 
 #header_list {
@@ -201,6 +194,7 @@ ul > img {
 	}
 
 	.header_item {
+		height:1.75vh;
 		line-height:1.5vh;
 		font-size:1.5vh;
 	}
