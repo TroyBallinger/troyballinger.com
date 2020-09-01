@@ -188,6 +188,8 @@ p, li {
 
 	#header-link-holder {
 		height: 2vh;
+		padding-top: .5vh;
+		padding-bottom: .5vh;
 	}
 
 	#splash {
