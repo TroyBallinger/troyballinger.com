@@ -167,13 +167,8 @@ p, li {
 		font-size: 1.5vh;
 	}
 
-	ul {
-		padding-left: 20px;
-	}
-
 	p, li {
 		font-size: 1.5vh;
-		padding-left: 0;
 	}
 
 	.header_item {
