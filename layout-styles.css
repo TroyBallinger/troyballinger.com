@@ -22,21 +22,21 @@ img {
 }
 
 h1 {
-	font-size: 1.75vw;
+	font-size: 3vw;
 }
 
 h2 {
-	font-size: 1.5vw;
+	font-size: 2vw;
 }
 
 h3 {
-	font-size: 1vw;
+	font-size: 1.5vw;
 }
 
 p, li {
 	padding-left: 1vw;
 	font-family: 'Verdana', sans-serif;
-	font-size: 1vw;
+	font-size: 1.4vw;
 }
 
 /* Classes */
@@ -52,7 +52,7 @@ p, li {
 	vertical-align: middle;
 	color: white;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 1.5vw;
+	font-size: 2vw;
 }
 
 .header-item > a:hover {
@@ -76,7 +76,7 @@ p, li {
 	z-index: 95;
 	width: 100%;
 	background-color: #24292E;
-	height: 2vw;
+	height: 2.5vw;
 	padding-top: .5vw;
 	padding-bottom: .5vw;
 	text-align: center;
@@ -88,8 +88,8 @@ p, li {
 #logo {
 	position: fixed;
 	padding-left: 1vw;
-	height: 2vw;
-	width: 2vw;
+	height: 2.5vw;
+	width: 2.5vw;
 	z-index: 99;
 }
 
@@ -137,8 +137,7 @@ p, li {
 }
 
 #website-intro > h1 {
-	font-size: 2vw;
-	font-weight: bold;
+	font-size: 3.5vw;
 }
 
 /* Mobile */
@@ -149,19 +148,19 @@ p, li {
 	}
 
 	h1 {
-		font-size: 2.25vh;
+		font-size: 3vh;
 	}
 
 	h2 {
-		font-size: 2vh;
+		font-size: 2.5vh;
 	}
 
 	h3 {
-		font-size: 1.5vh;
+		font-size: 2.2vh;
 	}
 
 	p, li {
-		font-size: 1.5vh;
+		font-size: 2vh;
 		padding:0;
 	}
 
@@ -170,8 +169,8 @@ p, li {
 	}
 
 	.header-item > a {
-		line-height: 1.5vh;
-		font-size: 1.5vh;
+		line-height: 2.5vh;
+		font-size: 2.5vh;
 	}
 
 	.article {
@@ -181,23 +180,23 @@ p, li {
 	}
 
 	#header-link-holder {
-		height: 2vh;
+		height: 3vh;
 		padding-top: .5vh;
 		padding-bottom: .5vh;
 	}
 
 	#splash {
-		clip-path: polygon(0 0, 100% 0, calc(100% - 4vh) 100%, 2vh calc(100% - 3vh));
-		-webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 4vh) 100%, 2vh calc(100% - 3vh));
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 2vh calc(100% - 3vh));
+		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2vh calc(100% - 3vh));
 	}
 	
 	#splash-backdrop {
-		clip-path: polygon(0 0, 100% 0, calc(100% - 2vh) calc(100% - 4vh), 4vh 100%);
-		-webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 2vh) calc(100% - 4vh), 4vh 100%);
+		clip-path: polygon(0 0, 100% 0, calc(100% - 2vh) calc(100% - 3vh), 0 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 2vh) calc(100% - 3vh), 0 100%);
 	}
 
 	#splash-holder {
-		height: 16vh;
+		height: 20vh;
 	}
 
 	#logo {
@@ -205,15 +204,11 @@ p, li {
 	}
 
 	#website-intro {
-		top: 3.5vh;
+		top: 5vh;
 		padding: 2vh;
 	}
 
 	#website-intro > h1 {
-		font-size: 2.25vh;
-	}
-
-	#website-intro > h1 {
-		font-size: 2.25vh;
+		font-size: 3.5vh;
 	}
 }
