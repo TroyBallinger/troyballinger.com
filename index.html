@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">	
+<html lang="en">
+
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -15,75 +16,58 @@
 	<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
 	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<script src="scroll.js"></script>
+	<script src="funcs.js"></script>
 	<title>Troy Ballinger | Software Engineer</title>
 	<link rel="canonical" href="https://troyballinger.com/">
 </head>
+
 <body>
-<!--TODO: Add easter eggs in code-->
-<div id ="header_list">
-	<div id="header_link_holder">
+<div id="header-link-holder">
 	<img src="/icons/logo-white.png" id="logo">
-		<nav>
-			<li class="header_item">
-				<a href="https://linkedin.com/in/troy-ballinger/" target="_blank">LinkedIn</a> 
-			</li>
-			<li class="header_item">
-				<a type="application/pdf" href="/resume.pdf" rel="nofollow" target="_blank">Resume</a>
-			</li>
-			</li>
-			<li class="header_item">
-				<a href="https://github.com/TroyBallinger" target="_blank">GitHub</a> 
-			</li>
-		</nav>
-	</div>
+	<nav>
+		<li class="header-item">
+			<a href="https://linkedin.com/in/troy-ballinger/" target="_blank">LinkedIn</a> 
+		</li>
+		<li class="header-item">
+			<a type="application/pdf" href="/resume.pdf" rel="nofollow" target="_blank">Resume</a>
+		</li>
+		</li>
+		<li class="header-item">
+			<a href="https://github.com/TroyBallinger" target="_blank">GitHub</a> 
+		</li>
+	</nav>
 </div>
-<div class="content_wrapper">
-	<div id="profile_background">
-		<div id="profile_left">
-			<h1>troyballinger.com </h1>
+
+<div id="splash-holder">
+	<div id="splash">
+		<div id="website-intro">
+			<h1>troyballinger.com</h1>
 			<h3>Software Engineer</h3>
 		</div>
-		<div id="profile_circle_image">
-			<img src="media/troy-headshot.jpg" id="profile_headshot">
-		</div>
 	</div>
-	<div class="writeup">
-		<h1>Hello there!</h1>
-			<p>I'm hoping what you're looking for is on the top nav bar, otherwise I'd have a poorly designed site.</p>
-		<h2>What do I specialize in?</h2>
-			<p>Low-level languages. I find the better a programmer is at writing C, the faster they can pick up new languages. But we can debate that one.</p>
-			<p>Cybersecurity. From modifying <a href="https://ghidra-sre.org/"><i>Ghidra</i></a>'s source code, to writing papers on quantum computing, to CTF challenges. I've done it all.</p>
-			<p>Leading teams. Recognizing others' strengths and utilizing their skills to reach goals efficiently.</p>
-		<h2>What's next?</h2>
-			<p>I'm actively interviewing. Shoot me an email: troyballinger97 at gmail</p>
-	</div>
+	<div id="splash-backdrop"></div>
 </div>
-<span style="text-align:right; position:fixed; bottom:0; width:100%;">
-	<p style="margin:0;" id="last-updated">
-	<script>
-		// If this request fails (bad request/noscript) the entire line won't show up, so errors are no biggie
-		fetch("https://api.github.com/repos/TroyBallinger/troyballinger.github.io/commits/master").then( (res) => {
-			return res.json();
-		}).then(data => {
-			let dateAndTime = data["commit"]["author"]["date"];
-			let date = dateAndTime.split("T")[0];
-			document.getElementById("last-updated").innerHTML = `Last updated: ${date}`;
-		}).catch(_err => {
-			// GitHub API error
-		});
 
-		let scrambled = "Xibu(t!vq!gfmmpx!efw@";
-		let unscrambled = Array.from(scrambled).map(char => {
-			return String.fromCharCode(char.charCodeAt() - 1);
-		}).join("");
+<div class="article">
+	<h1>Hey there!</h1>
+	<p>I'm a new college grad with a B.S. in Computer Science from Binghamton University.</p>
+	<h2>So...what do I do?</h2>
+		<p>Write code. I started programming when I was 9 years old and I'm not sick of it (yet).</p>
+		<p>Build stuff. I've worked back-end, front-end, and DevOps before, sometimes simultaneously.</p>
+		<p>Lead teams. I see the big picture and know how to get there.</p>
+	<div id="projects" style="display:none;">
+		<h2>Code samples:</h2>
+			<ul id="projects-list">
+				<!--Dynamically populated-->				
+			</ul>
+	</div>
+	<h2>What's next?</h2>
+		<p>I'm actively interviewing. Shoot me an email: troyballinger97 * gmail</p>
+</div>
 
-		function callMe() {
-			return unscrambled;
-		}
-	</script>
-	</p>
-	<p style="margin:0;"><a href="https://github.com/TroyBallinger/troyballinger.github.io">View website source code</a></p>
+<span style="text-align:center; position:fixed; bottom:0; width:100%;">
+	<p style="margin:0;" id="last-updated"></p>
 </span>
 </body>
+
 </html>
