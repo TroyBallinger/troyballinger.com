@@ -169,6 +169,7 @@ p, li {
 
 	p, li {
 		font-size: 1.5vh;
+		padding:0;
 	}
 
 	.header_item {
