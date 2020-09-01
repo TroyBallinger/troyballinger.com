@@ -44,7 +44,6 @@ p, li {
 .header-item {
 	text-align: center;
 	list-style: none;
-	height: 100%;
 }
 
 .header-item > a {
@@ -174,6 +173,12 @@ p, li {
 
 	p, li {
 		font-size: 1.5vh;
+		padding-left: 0;
+	}
+
+	.header_item {
+		line-height: 1.5vh;
+		min-height: 100%;
 	}
 
 	.header-item > a {
