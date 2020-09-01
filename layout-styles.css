@@ -172,9 +172,8 @@ p, li {
 		padding:0;
 	}
 
-	.header_item {
-		line-height: 1.5vh;
-		min-height: 100%;
+	.header-item {
+		height: 100%;
 	}
 
 	.header-item > a {

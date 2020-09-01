@@ -54,10 +54,9 @@ function pullPublicReposFromGitHub() {
 		if (document.getElementById("projects-list").childElementCount == 0) {
 			throw 'Failed to populate projects list';
 		}
-
-		document.getElementById("projects").style.display = 'visible;';
 	}).catch(_err => {
 		// GitHub API error or no population failure
+		document.getElementById("projects").style.display = 'none';
 	});
 }
 
