@@ -44,6 +44,7 @@ p, li {
 .header-item {
 	text-align: center;
 	list-style: none;
+	height: 100%;
 }
 
 .header-item > a {

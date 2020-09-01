@@ -57,7 +57,6 @@ function pullPublicReposFromGitHub() {
 
 		document.getElementById("projects").style.display = 'visible;';
 	}).catch(_err => {
-		console.log(_err)
 		// GitHub API error or no population failure
 	});
 }
