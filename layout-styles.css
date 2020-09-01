@@ -44,7 +44,8 @@ p, li {
 .header-item {
 	text-align: center;
 	list-style: none;
-	width: 33%;
+	width: 32%;
+	flex-grow: 1;
 }
 
 .header-item > a {
@@ -81,14 +82,14 @@ p, li {
 	text-align: center;
 	transition: .25s ease;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: flex-start;
+	justify-content: space-between;
 }
 
 #logo {
-	float: left;
+	position: fixed;
 	padding-left: 1vw;
-	height: inherit;
+	height: 2vw;
+	width: 2vw;
 	z-index: 99;
 }
 
