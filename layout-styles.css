@@ -44,6 +44,7 @@ p, li {
 .header-item {
 	text-align: center;
 	list-style: none;
+	width: 33%;
 }
 
 .header-item > a {
@@ -72,17 +73,16 @@ p, li {
 #header-link-holder {
 	position: fixed;
 	z-index: 95;
-	min-width: 100%;
+	width: 100%;
 	background-color: #24292E;
 	height: 2vw;
 	padding-top: .5vw;
 	padding-bottom: .5vw;
 	text-align: center;
 	transition: .25s ease;
-	column-count: 3;
-	-webkit-column-break-inside: avoid;
-    page-break-inside: avoid;
-	break-inside: avoid;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 #logo {
