@@ -1,6 +1,6 @@
 window.onscroll = () => { shrinkHeaderOnScroll(); };
-//getLastUpdatedDateFromGitHub();
-//pullPublicReposFromGitHub();
+getLastUpdatedDateFromGitHub();
+pullPublicReposFromGitHub();
 
 function shrinkHeaderOnScroll() {
 	let header_link_holder = document.getElementById("header-link-holder");
