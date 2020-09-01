@@ -102,12 +102,8 @@ p, li {
 	height: inherit;
 	width: 100%;
 	position: absolute;
-	clip-path: polygon(
-		0 0,
-		100% 0,
-		calc(100% - 8vw) 100%,
-		5vw calc(100% - 5vw)
-	);
+	clip-path: polygon(0 0, 100% 0, calc(100% - 8vw) 100%, 5vw calc(100% - 5vw));
+	-webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 8vw) 100%, 5vw calc(100% - 5vw));
 	z-index: 25;
 }
 
@@ -116,12 +112,8 @@ p, li {
 	position: absolute;
 	height: inherit;
 	width: 100%;
-	clip-path: polygon(
-		0 0,
-		100% 0,
-		calc(100% - 2vw) calc(100% - 8vw),
-		8vw 100%
-	);
+	clip-path: polygon(0 0, 100% 0, calc(100% - 2vw) calc(100% - 8vw), 8vw 100%);
+	-webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 2vw) calc(100% - 8vw), 8vw 100%);
 	z-index: 5;
 }
 
@@ -195,21 +187,13 @@ p, li {
 	}
 
 	#splash {
-		clip-path: polygon(
-			0 0,
-			100% 0,
-			calc(100% - 4vh) 100%,
-			2vh calc(100% - 3vh)
-		);
+		clip-path: polygon(0 0, 100% 0, calc(100% - 4vh) 100%, 2vh calc(100% - 3vh));
+		-webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 4vh) 100%, 2vh calc(100% - 3vh));
 	}
 	
 	#splash-backdrop {
-		clip-path: polygon(
-			0 0,
-			100% 0,
-			calc(100% - 2vh) calc(100% - 4vh),
-			4vh 100%
-		);
+		clip-path: polygon(0 0, 100% 0, calc(100% - 2vh) calc(100% - 4vh), 4vh 100%);
+		-webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 2vh) calc(100% - 4vh), 4vh 100%);
 	}
 
 	#splash-holder {
