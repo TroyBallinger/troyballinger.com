@@ -5,33 +5,32 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="Ambitious software engineer with a desire to learn new tech. Check out this website for my contact info and resume.">
-	<meta name="msapplication-TileColor" content="#da532c">
-	<meta name="theme-color" content="#ffffff">
+	<meta name="msapplication-config" content="/browserconfig.xml">
+	<meta name="theme-color" content="#1a3d6c">
 	<meta name="google-site-verification" content="googlec1f39be3de8d63b8.html">
-	<link href="layout-styles.css" type="text/css" rel="stylesheet">
+	<link href="layout.css" type="text/css" rel="stylesheet">
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
 	<link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
-	<link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<script src="funcs.js"></script>
+	<script src="github-api-getters.js"></script>
 	<title>Troy Ballinger | Software Engineer</title>
 	<link rel="canonical" href="https://troyballinger.com/">
 </head>
 
 <body>
-<nav id="header-link-holder">
+<nav id="nav-bar">
 	<img src="/icons/logo-white.png" id="logo">
-	<li class="header-item">
+	<li class="nav-item">
 		<a href="https://linkedin.com/in/troy-ballinger/" target="_blank">LinkedIn</a> 
 	</li>
-	<li class="header-item">
+	<li class="nav-item">
 		<a type="application/pdf" href="/resume.pdf" rel="nofollow" target="_blank">Resume</a>
 	</li>
 	</li>
-	<li class="header-item">
+	<li class="nav-item">
 		<a href="https://github.com/TroyBallinger" target="_blank">GitHub</a> 
 	</li>
 </nav>
@@ -53,7 +52,7 @@
 		<p>Write code. I started programming when I was 9 years old and I'm not sick of it (yet).</p>
 		<p>Build stuff. I've worked back-end, front-end, and DevOps before, sometimes simultaneously.</p>
 		<p>Lead teams. I see the big picture and know how to get there.</p>
-	<div id="projects">
+	<div id="projects" style="display:none;">
 		<h2>Code samples:</h2>
 			<!--Dynamically populated-->
 			<ul id="projects-list"></ul>
