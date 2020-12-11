@@ -77,7 +77,7 @@ html {
 }
 
 .nav-item a:hover {
-	color: var(--secondary-color);
+	color: #0000EE;
 }
 
 /* IDs */
