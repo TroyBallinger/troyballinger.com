@@ -77,7 +77,9 @@ html {
 }
 
 .nav-item a:hover {
-	color: #0000EE;
+	background-color: var(--background-color);
+	border-radius: 3px;
+	color: var(--secondary-color);
 }
 
 /* IDs */
@@ -144,14 +146,18 @@ html {
 
 @media only screen and (max-width: 1024px) {
 	:root {
-		--extra-large-font-size: calc(32px + 0.25vh);
-		--large-font-size: calc(24px + 0.25vh);
+		--extra-large-font-size: calc(30px + 0.25vh);
+		--large-font-size: calc(22px + 0.25vh);
 		--medium-font-size: calc(20px + 0.25vh);
 		--small-font-size: calc(16px + 0.25vh);
 	}
 	
 	h1, h2, h3 {
 		text-align: center;
+	}
+
+	ul {
+		padding-left: 0;
 	}
 
 	.article {
@@ -161,25 +167,24 @@ html {
 	}
 
 	.nav-item a {
-		font-size: var(--medium-font-size);
+		font-size: var(--large-font-size);
 	}
 
 	#nav-bar {
-		padding: 0.25vh 0;
+		padding: 0.5vh 0 0.5vh 0;
 	}
 
 	#splash {
-		clip-path: polygon(0 0, 100% 0, 100% 100%, 2vh calc(100% - 3vh));
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2vh calc(100% - 3vh));
+		clip-path: none;
+		-webkit-clip-path: none;
 	}
 	
 	#splash-backdrop {
-		clip-path: polygon(0 0, 100% 0, calc(100% - 2vh) calc(100% - 3vh), 0 100%);
-		-webkit-clip-path: polygon(0 0, 100% 0, calc(100% - 2vh) calc(100% - 3vh), 0 100%);
+		display: none;
 	}
 
 	#splash-holder {
-		height: 30vh;
+		height: 19vh;
 	}
 
 	#logo {
@@ -187,8 +192,9 @@ html {
 	}
 
 	#website-intro {
-		top: 10vh;
-		padding: 1vh;
+		top: 6vh;
+		padding: 1vh 3vh 1vh 3vh;
+		border-radius: 1vh;
 	}
 }
 
