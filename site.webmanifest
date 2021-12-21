@@ -1,14 +1,14 @@
 {
-    "name": "troyballinger.com",
-    "short_name": "tb",
-    "icons": [
-        {
-            "src": "/icon.png",
-            "sizes": "180x180",
-            "type": "image/png"
-        }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#161b22",
-    "display": "standalone"
+  "name": "troyballinger.com",
+  "short_name": "tb",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#161b22",
+  "display": "standalone"
 }

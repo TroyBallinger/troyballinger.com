@@ -1,3 +1,3 @@
 # troyballinger.com
 
-This website serves as a place to host my resume.
+A static website to host my resume and serve as a cloud-based business card.
