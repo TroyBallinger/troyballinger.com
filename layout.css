@@ -50,6 +50,10 @@ img {
   user-select: none;
 }
 
+ul {
+  padding: 0;
+}
+
 /* Classes */
 
 .content {
@@ -161,7 +165,7 @@ h3 {
 }
 
 #projects-list li {
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 #last-updated {
@@ -184,9 +188,6 @@ h3 {
     --medium-font-size: calc(14px + 0.25vw);
     --small-font-size: calc(12px + 0.25vw);
     --profile-pic-size: calc(75px + 0.25vw);
-  }
-  ul {
-    padding-left: 0;
   }
   .nav-item {
     margin-left: 2vw;

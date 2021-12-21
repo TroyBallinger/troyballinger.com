@@ -1,12 +1,7 @@
-window.addEventListener("DOMContentLoaded", (_event) => {
-  populateLastUpdatedDate();
-  populateProjects();
-});
+const BASE_URL = "https://api.github.com";
 
-async function populateLastUpdatedDate() {
-  fetch(
-    "https://api.github.com/repos/TroyBallinger/troyballinger.github.io/commits/main"
-  )
+const populateLastUpdatedDate = async () => {
+  fetch(`${BASE_URL}/repos/TroyBallinger/troyballinger.github.io/commits/main`)
     .then((res) => res.json())
     .then((latestCommitData) => {
       // Get date of last commit
@@ -19,11 +14,11 @@ async function populateLastUpdatedDate() {
     .catch((_err) => {
       // GitHub API error or parse error
     });
-}
+};
 
 // Pull every public repository from my profile
-async function populateProjects() {
-  fetch("https://api.github.com/users/TroyBallinger/repos")
+const populateProjects = async () => {
+  fetch(`${BASE_URL}/users/TroyBallinger/repos`)
     .then((res) => res.json())
     .then((reposArray) => {
       const projectsList = document.getElementById("projects-list");
@@ -32,11 +27,9 @@ async function populateProjects() {
         const newBullet = document.createElement("li");
         const repoLink = document.createElement("a");
 
-        const { html_url, name } = repo;
-
         try {
-          repoLink.href = html_url;
-          repoLink.innerHTML = name;
+          repoLink.href = repo.html_url;
+          repoLink.innerHTML = repo.name;
         } catch (_err) {
           // Parse error
           return;
@@ -54,4 +47,9 @@ async function populateProjects() {
     .catch((_err) => {
       // GitHub API error or population failure
     });
-}
+};
+
+window.addEventListener("DOMContentLoaded", (_event) => {
+  populateLastUpdatedDate();
+  populateProjects();
+});
