@@ -16,8 +16,8 @@
     <meta property="og:title" content="troyballinger.com" />
     <meta property="og:image" content="og-link-image.jpg" />
     <meta property="og:logo" content="icon.png" />
-    <meta name="msapplication-TileColor" content="#e5e6e8" />
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-TileColor" content="#161b22" />
+    <meta name="theme-color" content="#161b22" />
 
     <link rel="canonical" href="https://troyballinger.com/" />
     <link
@@ -28,59 +28,64 @@
 
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1a3d6c" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#161b22" />
 
     <script src="getters.js"></script>
   </head>
 
-  <body>
-    <div class="homepage">
-      <div id="profile-box">
-        <div id="profile-pic-outline">
-          <img
-            src="https://troyballinger.com/media/profile-pic.jpg"
-            id="profile-pic"
-          />
-        </div>
-        <div id="profile-intro">
-          <h1>Troy Ballinger</h1>
-          <h3>Full-Stack Software Engineer</h3>
+  <body class="column">
+    <div class="content">
+      <div class="column">
+        <div class="column">
+          <div class="center">
+            <div id="profile-pic-outline">
+              <img
+                src="/media/profile-pic.jpg"
+                id="profile-pic"
+                class="no-select"
+                aria-hidden="true"
+              />
+            </div>
+            <div id="profile-title" class="column">
+              <h1>Troy Ballinger</h1>
+              <h3>Full-Stack Software Engineer</h3>
+            </div>
+          </div>
+          <nav class="center">
+            <a
+              href="https://linkedin.com/in/troy-ballinger/"
+              class="button"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a
+              href="/resume.pdf"
+              type="application/pdf"
+              class="button"
+              rel="nofollow"
+              target="_blank"
+              >Resume</a
+            >
+            <a
+              href="https://github.com/TroyBallinger"
+              class="button"
+              target="_blank"
+              >GitHub</a
+            >
+          </nav>
         </div>
       </div>
 
-      <nav id="nav-bar">
-        <li class="nav-item">
-          <a href="https://linkedin.com/in/troy-ballinger/" target="_blank"
-            >LinkedIn</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            type="application/pdf"
-            href="/resume.pdf"
-            rel="nofollow"
-            target="_blank"
-            >Resume</a
-          >
-        </li>
-        <li class="nav-item">
-          <a href="https://github.com/TroyBallinger" target="_blank">GitHub</a>
-        </li>
-      </nav>
-      <div class="content">
-        <div id="projects">
-          <h2>Code samples:</h2>
-          <!--Dynamically populated-->
-          <ul id="projects-list"></ul>
-        </div>
-        <h2>Reach out...</h2>
-        <p>
-          I love meeting new people and solving challenging problems.<br />
-          Add me on LinkedIn or send me an email!
-        </p>
-      </div>
+      <h2>Code samples:</h2>
+      <!--Dynamically populated-->
+      <ul id="projects-list" class="column link-list"></ul>
+      <h2>Reach out...</h2>
+      <p>
+        I love meeting new people and solving challenging problems.<br />
+        Add me on LinkedIn or send me an email!
+      </p>
     </div>
 
-    <div id="last-updated"></div>
+    <div id="last-updated" class="no-select"></div>
   </body>
 </html>
