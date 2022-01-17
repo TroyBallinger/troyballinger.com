@@ -4,6 +4,7 @@
     <title>Troy Ballinger | Software Engineer</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content="dark" name="color-scheme" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta
       name="description"
@@ -13,11 +14,18 @@
       name="google-site-verification"
       content="googlec1f39be3de8d63b8.html"
     />
-    <meta property="og:title" content="troyballinger.com" />
-    <meta property="og:image" content="og-link-image.jpg" />
-    <meta property="og:logo" content="icon.png" />
+    <meta property="og:url" content="https://troyballinger.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Troy Ballinger's Website" />
+    <meta name="og:description" content="Ambitious software engineer." />
+    <meta property="og:image" content="/og-link-image.jpg" />
+    <meta property="og:logo" content="/icon.png" />
     <meta name="msapplication-TileColor" content="#161b22" />
     <meta name="theme-color" content="#161b22" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#161b22" />
 
     <link rel="canonical" href="https://troyballinger.com/" />
     <link
@@ -25,10 +33,6 @@
       rel="stylesheet"
     />
     <link href="layout.css" type="text/css" rel="stylesheet" />
-
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#161b22" />
 
     <script src="getters.js"></script>
   </head>
@@ -42,13 +46,14 @@
               <img
                 src="/media/profile-pic.jpg"
                 id="profile-pic"
+                alt="Troy"
                 class="no-select"
                 aria-hidden="true"
               />
             </div>
             <div id="profile-title" class="column">
               <h1>Troy Ballinger</h1>
-              <h3>Full-Stack Software Engineer</h3>
+              <h2>Full-Stack Software Engineer</h2>
             </div>
           </div>
           <nav class="center">
@@ -56,6 +61,7 @@
               href="https://linkedin.com/in/troy-ballinger/"
               class="button"
               target="_blank"
+              aria-label="Go to LinkedIn"
               >LinkedIn</a
             >
             <a
@@ -64,26 +70,31 @@
               class="button"
               rel="nofollow"
               target="_blank"
+              download
+              aria-label="Download Resume"
               >Resume</a
             >
             <a
               href="https://github.com/TroyBallinger"
               class="button"
               target="_blank"
+              aria-label="Go to GitHub"
               >GitHub</a
             >
           </nav>
         </div>
       </div>
 
-      <h2>Code samples:</h2>
-      <!--Dynamically populated-->
-      <ul id="projects-list" class="column link-list"></ul>
-      <h2>Reach out...</h2>
-      <p>
-        I love meeting new people and solving challenging problems.<br />
-        Add me on LinkedIn or send me an email!
-      </p>
+      <div id="projects">
+        <h2>Code samples:</h2>
+        <!--Dynamically populated-->
+        <ul id="projects-list" class="column link-list"></ul>
+        <h2>Reach out...</h2>
+        <p>
+          I love meeting new people and solving challenging problems.<br />
+          Add me on LinkedIn or send me an email!
+        </p>
+      </div>
     </div>
 
     <div id="last-updated" class="no-select"></div>
