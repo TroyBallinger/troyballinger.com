@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Troy Ballinger | Software Engineer</title>
-
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="dark" name="color-scheme" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>Troy Ballinger | Software Engineer</title>
     <meta
       name="description"
-      content="Ambitious software engineer with a desire to learn new tech. Check out this website for my contact info and resume."
+      content="Software engineer with startup experience."
     />
     <meta
       name="google-site-verification"
       content="googlec1f39be3de8d63b8.html"
     />
+
+    <meta name="color-scheme" content="dark light" />
+
+    <meta name="msapplication-TileColor" content="#161b22" />
+    <meta name="theme-color" content="#161b22" />
+
     <meta property="og:url" content="https://troyballinger.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Troy Ballinger's Website" />
-    <meta name="og:description" content="Ambitious software engineer." />
-    <meta property="og:image" content="/og-link-image.jpg" />
-    <meta property="og:logo" content="/icon.png" />
-    <meta name="msapplication-TileColor" content="#161b22" />
-    <meta name="theme-color" content="#161b22" />
+    <meta name="og:description" content="Full-stack software engineer." />
+    <meta
+      property="og:image"
+      content="https://troyballinger.com/og-link-image.jpg"
+    />
+    <meta property="og:logo" content="https://troyballinger.com/icon.png" />
 
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
@@ -33,70 +39,37 @@
       rel="stylesheet"
     />
     <link href="layout.css" type="text/css" rel="stylesheet" />
-
-    <script src="getters.js"></script>
   </head>
 
-  <body class="column">
-    <div class="content">
-      <div class="column">
-        <div class="column">
-          <div class="center">
-            <div id="profile-pic-outline">
-              <img
-                src="/media/profile-pic.jpg"
-                id="profile-pic"
-                alt="Troy"
-                class="no-select"
-                aria-hidden="true"
-              />
-            </div>
-            <div id="profile-title" class="column">
-              <h1>Troy Ballinger</h1>
-              <h2>Full-Stack Software Engineer</h2>
-            </div>
-          </div>
-          <nav class="center">
-            <a
-              href="https://linkedin.com/in/troy-ballinger/"
-              class="button"
-              target="_blank"
-              aria-label="Go to LinkedIn"
-              >LinkedIn</a
-            >
-            <a
-              href="/resume.pdf"
-              type="application/pdf"
-              class="button"
-              rel="nofollow"
-              target="_blank"
-              download
-              aria-label="Download Resume"
-              >Resume</a
-            >
-            <a
-              href="https://github.com/TroyBallinger"
-              class="button"
-              target="_blank"
-              aria-label="Go to GitHub"
-              >GitHub</a
-            >
-          </nav>
-        </div>
-      </div>
+  <body>
+    <header>
+      <h1 id="title"><span class="quotes">Troy Ballinger</span></h1>
+      <h2 id="subtitle">Full-Stack Software Engineer</h2>
+    </header>
 
-      <div id="projects">
-        <h2>Code samples:</h2>
-        <!--Dynamically populated-->
-        <ul id="projects-list" class="column link-list"></ul>
-        <h2>Reach out...</h2>
-        <p>
-          I love meeting new people and solving challenging problems.<br />
-          Add me on LinkedIn or send me an email!
-        </p>
-      </div>
-    </div>
-
-    <div id="last-updated" class="no-select"></div>
+    <main>
+      <nav id="showcase">
+        <a
+          href="https://linkedin.com/in/troy-ballinger/"
+          target="_blank"
+          aria-label="Go to LinkedIn"
+          >LinkedIn</a
+        >
+        <a
+          href="/resume.pdf"
+          type="application/pdf"
+          rel="nofollow"
+          target="_blank"
+          aria-label="Download Resume"
+          >Resume</a
+        >
+        <a
+          href="https://github.com/TroyBallinger"
+          target="_blank"
+          aria-label="Go to GitHub"
+          >GitHub</a
+        >
+      </nav>
+    </main>
   </body>
 </html>
