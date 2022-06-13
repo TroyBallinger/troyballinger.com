@@ -129,8 +129,8 @@ nav {
 
 @media only screen and (max-width: 1000px) {
   :root {
-    --large-font-size: 1.25rem;
-    --medium-font-size: 1.125rem;
+    --large-font-size: 1.5rem;
+    --medium-font-size: 1.25rem;
   }
 
   header {
