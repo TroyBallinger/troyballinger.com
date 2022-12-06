@@ -8,7 +8,7 @@
   --medium-font-size: 3rem;
 }
 
-/* Elements */
+/* Desktop */
 
 a,
 a:visited {
@@ -20,8 +20,13 @@ a:hover,
 a:active,
 a:focus {
   color: var(--primary-color);
-  text-decoration: underline;
   outline: none;
+}
+
+a:hover,
+a:active,
+a:focus > .link-button {
+  border-color: var(--primary-color);
 }
 
 body {
@@ -57,31 +62,25 @@ header {
 
 main {
   margin: 0 auto;
-  width: 75%;
+  width: 60%;
 }
 
 nav {
   display: grid;
-  gap: 5rem;
+  gap: 2rem 4rem;
   grid-template-columns: repeat(3, 1fr);
   font-size: var(--medium-font-size);
   font-weight: 500;
   text-align: center;
 }
 
-/* Classes */
-
-.quotes:hover::before {
-  color: var(--text-color);
-  content: "'";
+.link-button {
+  padding: 2rem;
+  background-color: rgba(var(--text-color), 0.2);
+  border: solid 2px;
+  border-radius: 12px;
+  border-color: var(--text-color);
 }
-
-.quotes:hover::after {
-  color: var(--text-color);
-  content: "'";
-}
-
-/* IDs */
 
 #subtitle {
   color: var(--text-color);
@@ -92,42 +91,15 @@ nav {
   color: var(--primary-color);
 }
 
-#title:hover {
-  color: var(--text-color);
-}
-
-#title:hover::before {
-  color: var(--primary-color);
-  content: '';
-  animation-name: keystroke;
-  animation-fill-mode: forwards;
-  animation-duration: 0.5s;
-  animation-iteration-count: 1;
-}
-
-@keyframes keystroke {
-  0% {
-    content: '{ n: ';
-  }
-  33% {
-    content: '{ na: ';
-  }
-  66% {
-    content: '{ nam: ';
-  }
-  100% {
-    content: '{ name: ';
-  }
-}
-
-#title:hover::after {
-  color: var(--primary-color);
-  content: ' }';
-}
-
 /* Mobile */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) {
+  main {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
   :root {
     --large-font-size: 1.5rem;
     --medium-font-size: 1.25rem;
@@ -138,16 +110,13 @@ nav {
     margin-bottom: 5rem;
   }
 
-  main {
-    width: 95%;
-  }
-
   nav {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
 /* Light Mode */
+
 @media (prefers-color-scheme: light) {
   :root {
     --primary-color: #193e6b;
