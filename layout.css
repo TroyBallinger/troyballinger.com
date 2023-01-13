@@ -2,10 +2,12 @@
 
 :root {
   --primary-color: #a8cbf3;
+  --card-front-color: #1f2937;
+  --card-back-color: #1f2937;
   --background-color: #0d1117;
   --text-color: white;
-  --large-font-size: 5rem;
-  --medium-font-size: 3rem;
+  --large-font-size: 3.5rem;
+  --medium-font-size: 2rem;
 }
 
 /* Desktop */
@@ -21,18 +23,19 @@ a:active,
 a:focus {
   color: var(--primary-color);
   outline: none;
+  text-decoration: underline;
 }
 
-a:hover,
-a:active,
-a:focus > .link-button {
-  border-color: var(--primary-color);
+hr {
+  border: 0;
+  border-top: 1px solid var(--text-color);
+  margin: 0;
+  width: 80%;
 }
 
 body {
   color: var(--text-color);
-  font-family: 'Montserrat', Verdana, sans-serif;
-  background-color: var(--background-color);
+  font-family: "Montserrat", Verdana, sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -40,78 +43,114 @@ body {
   width: 100vw;
 }
 
-h1 {
-  color: var(--primary-color);
-  font-size: var(--large-font-size);
-  font-weight: 500;
-}
-
-h2 {
-  font-size: var(--medium-font-size);
-  font-weight: 400;
-}
-
-header {
+#background {
+  background-color: var(--background-color);
   display: flex;
-  flex-direction: column;
-  padding: 5rem;
-  margin-bottom: 10rem;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-main {
-  margin: 0 auto;
-  width: 60%;
-}
-
-nav {
-  display: grid;
-  gap: 2rem 4rem;
-  grid-template-columns: repeat(3, 1fr);
+#bio {
+  color: var(--text-color);
   font-size: var(--medium-font-size);
-  font-weight: 500;
+  margin: 0;
   text-align: center;
 }
 
-.link-button {
-  padding: 2rem;
-  background-color: rgba(var(--text-color), 0.2);
-  border: solid 2px;
-  border-radius: 12px;
+#card {
+  animation: 1.5s ease-out 1.5s flipToFrontOnLoad;
+  animation-iteration-count: 1;
   border-color: var(--text-color);
+  border-radius: 0 0 0 20px;
+  border-style: solid;
+  border-width: 1px;
+  height: 100%;
+  position: relative;
+  transition: transform 1.5s;
+  transition-delay: 0.3s;
+  transform-style: preserve-3d;
+  user-select: none;
+  width: 100%;
 }
 
-#subtitle {
-  color: var(--text-color);
+#card-back {
+  align-items: center;
+  position: absolute;
+  background-color: var(--card-back-color);
+  backface-visibility: hidden;
+  border-radius: 0 0 20px 0;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  font-size: var(--large-font-size);
+  font-weight: 700;
+  transform: rotateY(180deg);
+  width: 100%;
+}
+
+#card-front {
+  align-items: center;
+  background-color: var(--card-front-color);
+  backface-visibility: hidden;
+  border-radius: 0 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+#card-outer {
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  perspective: 1000px;
+  width: 700px;
+}
+
+#card-outer:active #card {
+  transform: rotateY(180deg);
+}
+
+#links {
+  display: flex;
+  font-size: var(--medium-font-size);
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#name {
+  color: var(--primary-color);
+  font-size: var(--large-font-size);
+  font-weight: 700;
   margin: 0;
 }
 
-#title {
-  color: var(--primary-color);
+.fineprint {
+  font-size: 1rem;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+
+@keyframes flipToFrontOnLoad {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
 }
 
 /* Mobile */
-
-@media only screen and (max-width: 1400px) {
-  main {
-    width: 80%;
-  }
-}
 
 @media only screen and (max-width: 1100px) {
   :root {
     --large-font-size: 1.5rem;
     --medium-font-size: 1.25rem;
-  }
-
-  header {
-    padding: 2rem;
-    margin-bottom: 5rem;
-  }
-
-  nav {
-    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -120,11 +159,9 @@ nav {
 @media (prefers-color-scheme: light) {
   :root {
     --primary-color: #193e6b;
+    --card-front-color: #e6e8ea;
+    --card-back-color: #e6e8ea;
     --background-color: #d1d2d3;
     --text-color: #303030;
-  }
-
-  h1 {
-    font-weight: 600;
   }
 }
