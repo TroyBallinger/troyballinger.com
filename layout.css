@@ -66,8 +66,7 @@ html {
 }
 
 #card {
-  animation: 1.5s ease-out 1.5s flipToFrontOnLoad;
-  animation-iteration-count: 1;
+  animation: flipToFrontOnLoad 1.5s ease-out 0 1;
   border-color: var(--text-color);
   border-radius: 0 0 0 20px;
   border-style: solid;
