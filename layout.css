@@ -167,7 +167,7 @@ a:focus {
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: #fafafa;
-    --gradient-color: #6aa2fb;
+    --gradient-color: #b4d1ff;
     --primary-color: #1d4ed8;
     --secondary-color: white;
     --tertiary-color: #e6e6e6;
