@@ -2,6 +2,7 @@
 
 :root {
   --background-color: #181c21;
+  --gradient-color: #3b82f6;
   --large-font-size: 3.5rem;
   --medium-font-size: 2rem;
   --primary-color: #3b82f6;
@@ -34,11 +35,12 @@ body {
 
 #background {
   align-items: center;
-  background: linear-gradient(5deg, var(--primary-color), var(--background-color) 30%);
+  background: linear-gradient(5deg, var(--gradient-color), var(--background-color) 30%);
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-y: scroll;
   width: 100%;
 }
 
@@ -105,6 +107,7 @@ body {
   color: white;
   font-size: var(--medium-font-size);
   margin-top: 96px;
+  margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
   padding: 12px 24px;
@@ -148,6 +151,7 @@ body {
 @media (prefers-color-scheme: light) {
   :root {
     --background-color: #fafafa;
+    --gradient-color: #6aa2fb;
     --primary-color: #1d4ed8;
     --secondary-color: white;
     --tertiary-color: #e6e6e6;
