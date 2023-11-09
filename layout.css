@@ -2,7 +2,7 @@
 
 :root {
   --background-color: #181c21;
-  --gradient-color: #3b82f6;
+  --gradient-color: #204075;
   --large-font-size: 3.5rem;
   --medium-font-size: 2rem;
   --primary-color: #3b82f6;
@@ -21,7 +21,7 @@ body {
   color: var(--text-color);
   display: flex;
   flex-direction: column;
-  font-family: 'Noto Sans', Verdana, sans-serif;
+  font-family: "Noto Sans", Verdana, sans-serif;
   overflow-x: hidden;
 }
 
@@ -35,7 +35,17 @@ body {
 
 #background {
   align-items: center;
-  background: linear-gradient(5deg, var(--gradient-color), var(--background-color) 30%);
+  background: radial-gradient(
+      circle at 10% 100%,
+      var(--gradient-color),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    radial-gradient(
+      circle at 100% 10%,
+      var(--gradient-color),
+      rgba(255, 255, 255, 0) 40%
+    );
+  background-color: var(--background-color);
   backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
@@ -72,13 +82,16 @@ body {
   justify-content: end;
 }
 
-#links > a, a:visited {
+#links > a,
+a:visited {
   border-radius: 16px;
   color: var(--text-color);
   padding: 6px 12px;
 }
 
-#links > a:hover, a:active, a:focus {
+#links > a:hover,
+a:active,
+a:focus {
   background-color: var(--tertiary-color);
   color: var(--primary-color);
   outline: none;
@@ -103,7 +116,7 @@ body {
 #resume-button {
   background-color: var(--primary-color);
   border-radius: 16px;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   color: white;
   font-size: var(--medium-font-size);
   margin-top: 96px;
