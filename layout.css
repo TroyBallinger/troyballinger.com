@@ -3,8 +3,8 @@
 :root {
   --background-color: #181c21;
   --gradient-color: #204075;
-  --large-font-size: 3.5rem;
-  --medium-font-size: 2rem;
+  --large-font-size: 2.75rem;
+  --medium-font-size: 1.5rem;
   --primary-color: #3b82f6;
   --secondary-color: #0d1117;
   --tertiary-color: #181c21;
@@ -14,7 +14,18 @@
 /* Desktop */
 
 a {
+  border-radius: 16px;
+  color: var(--text-color);
+  padding: 6px 12px;
   text-decoration: none;
+}
+
+a:active,
+a:focus,
+a:hover {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  outline: none;
 }
 
 body {
@@ -22,6 +33,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Noto Sans", Verdana, sans-serif;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -48,8 +60,8 @@ body {
   background-color: var(--background-color);
   backdrop-filter: blur(10px);
   display: flex;
+  flex: 1;
   flex-direction: column;
-  height: 100%;
   justify-content: center;
   overflow-y: scroll;
   width: 100%;
@@ -62,16 +74,25 @@ body {
   width: 60%;
 }
 
-#bio > h3 {
+#bio > h2 {
   font-size: var(--large-font-size);
   font-weight: 800;
   margin: 0;
   margin-bottom: 36px;
 }
 
-#bio > p {
+#bio-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#bio-content > p {
+  display: flex;
+  flex-direction: row;
   font-size: var(--medium-font-size);
   font-weight: 500;
+  gap: 1rem;
   margin: 0;
 }
 
@@ -82,19 +103,10 @@ body {
   justify-content: end;
 }
 
-#links > a,
-a:visited {
-  border-radius: 16px;
-  color: var(--text-color);
-  padding: 6px 12px;
-}
-
-#links > a:hover,
-a:active,
-a:focus {
-  background-color: var(--tertiary-color);
-  color: var(--primary-color);
-  outline: none;
+#main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
 #name {
@@ -120,18 +132,21 @@ a:focus {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1);
   color: white;
   font-size: var(--medium-font-size);
-  margin-top: 96px;
-  margin-bottom: 48px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 96px auto 48px;
   padding: 12px 24px;
   width: fit-content;
 }
 
-#resume-button:hover,
 #resume-button:active,
-#resume-button:focus {
+#resume-button:focus,
+#resume-button:hover {
   font-weight: 900;
+}
+
+.emoji {
+  font-size: 1.75em;
+  line-height: 1;
+  vertical-align: middle;
 }
 
 /* Mobile */
@@ -142,11 +157,16 @@ a:focus {
     --medium-font-size: 1rem;
   }
 
+  #background {
+    justify-content: flex-start;
+    padding-top: 64px;
+  }
+
   #bio {
     width: 90%;
   }
 
-  #bio > h3 {
+  #bio > h2 {
     margin-bottom: 12px;
   }
 
