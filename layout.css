@@ -101,6 +101,7 @@ a:focus {
   color: var(--primary-color);
   font-size: var(--medium-font-size);
   font-weight: 800;
+  margin: 0;
 }
 
 #navbar {

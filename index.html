@@ -2,91 +2,136 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Troy Ballinger</title>
+    <title>Troy Ballinger | Software Engineer</title>
     <meta
       name="description"
-      content="Full stack software engineer with startup experience."
+      content="Troy Ballinger is a full stack software engineer with startup experience."
     />
-    <meta keywords="Software engineer, developer, resume, portfolio" />
-    <meta author="Troy Ballinger" />
+    <meta name="keywords" content="Software Engineer, Full Stack Developer" />
+    <meta name="author" content="Troy Ballinger" />
     <link rel="canonical" href="https://troyballinger.com/" />
 
     <meta name="color-scheme" content="dark light" />
-    <meta name="msapplication-TileColor" content="#161b22" />
-    <meta name="theme-color" content="#161b22" />
+    <meta name="theme-color" content="#161b22" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+
     <meta property="og:url" content="https://troyballinger.com/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Troy Ballinger's Website" />
-    <meta name="og:description" content="Full-stack software engineer." />
-    <meta
-      property="og:image"
-      content="https://troyballinger.com/og-image.png"
-    />
-    <meta property="og:logo" content="https://troyballinger.com/icon.png" />
-    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
+    <meta property="og:title" content="Troy Ballinger | Software Engineer" />
+    <meta property="og:description" content="Full-stack software engineer based in Tampa, Florida, with startup experience." />
+    <meta property="og:image" content="https://troyballinger.com/og-image.png" />
+    <meta property="og:image:alt" content="Troy Ballinger's website banner" />
 
-    <meta
-      name="google-site-verification"
-      content="googlec1f39be3de8d63b8.html"
-    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans"
+    <meta name="google-site-verification" content="googlec1f39be3de8d63b8.html" />
+    
+    <link 
+      rel="preconnect" 
+      href="https://fonts.googleapis.com"
+      crossorigin
+    />
+    <link 
+      rel="preconnect" 
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link 
+      href="https://fonts.googleapis.com/css?family=Noto+Sans" 
       rel="stylesheet"
     />
-    <link href="layout.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="layout.css" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Troy Ballinger",
+      "url": "https://troyballinger.com",
+      "sameAs": [
+        "https://linkedin.com/in/troy-ballinger",
+        "https://github.com/TroyBallinger"
+      ],
+      "jobTitle": "Software Engineer",
+      "workLocation": {
+        "@type": "City",
+        "name": "Tampa"
+      }
+    }
+    </script>
   </head>
 
   <body>
-    <div id="navbar">
-      <span id="name"> Troy Ballinger </span>
+    <header>
+      <nav id="navbar" aria-label="Main navigation">
+        <h1 id="name">Troy Ballinger</h1>
 
-      <nav id="links">
-        <a
-          href="https://linkedin.com/in/troy-ballinger"
-          target="_blank"
-          aria-label="View LinkedIn"
-        >
-          LinkedIn.
-        </a>
+        <div id="links" role="list">
+          <a
+            href="https://linkedin.com/in/troy-ballinger"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Troy's LinkedIn profile (opens in new tab)"
+            role="listitem"
+          >
+            LinkedIn
+          </a>
 
-        <a
-          href="https://github.com/TroyBallinger"
-          target="_blank"
-          aria-label="View GitHub"
-        >
-          GitHub.
-        </a>
+          <a
+            href="https://github.com/TroyBallinger"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View Troy's GitHub profile (opens in new tab)"
+            role="listitem"
+          >
+            GitHub
+          </a>
+        </div>
       </nav>
-    </div>
+    </header>
 
-    <div id="background">
-      <div id="bio">
-        <h3>Hey, I'm Troy.</h3>
+    <main id="main">
+      <div id="background">
+        <section id="bio" aria-labelledby="greeting">
+          <h2 id="greeting">Hey, I'm Troy.</h2>
 
-        <p>🌴 I'm a software engineer based in Tampa, Florida.</p>
+          <div role="list">
+            <p role="listitem">
+              <span aria-hidden="true">👨🏼‍💻</span>
+              <span>I'm a software engineer based in Tampa, Florida. I have a passion for building secure, performant applications; I've been coding since I was 9 years old!</span>
+            </p>
 
-        <p>👨🏼‍💻 I've been writing code since I was 9 years old!</p>
+            <p role="listitem">
+              <span aria-hidden="true">🚀</span>
+              <span>I specialize in taking products from concept to production. With extensive startup experience, I excel at building for scale and collaborating across teams to deliver value quickly.</span>
+            </p>
 
-        <p>
-          🎨 I have experience architecting products for a variety of complex
-          use cases.
-        </p>
+            <p role="listitem">
+              <span aria-hidden="true">💬</span>
+              <span>Always open to discussing new opportunities, tech trends, or potential collaborations. Let's connect!</span>
+            </p>
+          </div>
+        </section>
+
+        <a
+          id="resume-button"
+          href="/resume.pdf"
+          type="application/pdf"
+          rel="noopener"
+          target="_blank"
+          aria-label="View Troy's resume (opens PDF in new tab)"
+        >
+          View resume →
+        </a>
       </div>
-
-      <a
-        id="resume-button"
-        href="/resume.pdf"
-        type="application/pdf"
-        rel="nofollow"
-        target="_blank"
-        aria-label="View Resume"
-      >
-        View resume →
-      </a>
-    </div>
+    </main>
   </body>
 </html>
